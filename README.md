@@ -10,18 +10,17 @@ This is a simple tool that can be added to any existing pool table at an insigni
 
 <h2>Instructions for use:</h2>
  Connect the Arduino according to the descriptions provided in the links below:
- *https://iotprojectsideas.com/measure-pitch-roll-and-yaw-angles-using-mpu6050-and-arduino/
- *https://circuitdigest.com/microcontroller-projects/interfacing-ir-sensor-module-with-arduino
+-    https://iotprojectsideas.com/measure-pitch-roll-and-yaw-angles-using-mpu6050-and-arduino/
+-    https://circuitdigest.com/microcontroller-projects/interfacing-ir-sensor-module-with-arduino
    
 Arduino Connection Explained:
-   *Connect gnd on arduino to the ground on the MPU6050 sensor and the IR sensor
-   *Connect 5V on arduino to the Vcc on the MPU6050 and the IR sensor
-   *MPU6050:
-     **Connect analog IN A4 and A5 on the arduino to the SDA and SLC pins respectively
-   *IR sensor:
-     **Connect OUT pin to the ~9 digital pin of the arduino
+-   Connect gnd on arduino to the ground on the MPU6050 sensor and the IR sensor
+-   Connect 5V on arduino to the Vcc on the MPU6050 and the IR sensor
+-   MPU6050:
+    -    Connect analog IN A4 and A5 on the arduino to the SDA and SLC pins respectively
+-   IR sensor:
+    -    Connect OUT pin to the ~9 digital pin of the arduino
  further, refer to the images in PICS folder to understand the full connection.
- 
  To deploy arduino code, download arduino IDE, identify the port occupied by the arduino and verify and upload the code into the device. make sure that all connections have been made prior
  
  clone the repo locally and install the necessary packages from requirements.txt.
