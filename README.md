@@ -20,6 +20,7 @@ Arduino Connection Explained:
     -    Connect analog IN A4 and A5 on the arduino to the SDA and SLC pins respectively
 -   IR sensor:
     -    Connect OUT pin to the ~9 digital pin of the arduino
+
  further, refer to the images in PICS folder to understand the full connection.
  To deploy arduino code, download arduino IDE, identify the port occupied by the arduino and verify and upload the code into the device. make sure that all connections have been made prior
  
