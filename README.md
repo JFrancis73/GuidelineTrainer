@@ -8,7 +8,7 @@ This is a simple tool that can be added to any existing pool table at an insigni
 
 
 
-<h2>Instructions for use:</h>
+<h2>Instructions for use:</h2>
  Connect the Arduino according to the descriptions provided in the links below:
    >https://iotprojectsideas.com/measure-pitch-roll-and-yaw-angles-using-mpu6050-and-arduino/
    >https://circuitdigest.com/microcontroller-projects/interfacing-ir-sensor-module-with-arduino
