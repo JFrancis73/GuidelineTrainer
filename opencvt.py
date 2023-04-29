@@ -14,8 +14,6 @@ def get_coords():
     coordinate_list = []
     for contour in contours:
         M = cv2.moments(contour)
-        #print("moments")
-        #print(M)
         cx = int(M['m10']/M['m00'])
         cy = int(M['m01']/M['m00'])
         window_name = 'image'
@@ -24,12 +22,7 @@ def get_coords():
         table_height = img.shape[0]
         ball_pos_x = (cx / table_width) * 100
         ball_pos_y = (cy / table_height) * 100
-        #cv2.imshow(window_name, blurred)
         coordinate_list.append((2*(ball_pos_x//10)+1,20-(2*(ball_pos_y//10)+1)))
-        #print(2*(ball_pos_x//10)+1,2*(ball_pos_y//10)+1)
     return coordinate_list
 
-#print(get_coords())
-
-#print(2*(ball_pos_x//10)+1,2*(ball_pos_y//10)+1)
 
