@@ -1,7 +1,3 @@
-/* Get tilt angles on X and Y, and rotation angle on Z
-    Angles are given in degrees
- License: MIT
- */
  #include "Wire.h"
  #include <MPU6050_light.h>
  MPU6050 mpu(Wire);
@@ -36,7 +32,6 @@
         sensorStatusInt = 0;
         Serial.print("[0, " + String(mpu.getAngleZ()) + "]");
         Serial.println();
-        //Serial.println("Motion ended!"); // print Motion Detected! on the serial monitor window
       }
       else  {
         //else turn on the onboard LED
@@ -44,15 +39,7 @@
         sensorStatusInt = 1;
         Serial.print("[1, " + String(mpu.getAngleZ()) + "]");
         Serial.println();
-        //Serial.println("Motion detected!"); // print Motion Ended! on the serial monitor window
       }
-     
-     //Serial.print("X : ");
-     //Serial.print(mpu.getAngleX());
-     //Serial.print("\tY : ");
-     //Serial.print(mpu.getAngleY());
-     //Serial.print("\tZ : ");
-     //Serial.println(mpu.getAngleZ());
      
      timer = millis();
    }
